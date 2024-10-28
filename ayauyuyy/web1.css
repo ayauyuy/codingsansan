@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'nav nav nav nav'
+    'aside main main main'
+    'footer footer footer footer';
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(255, 228, 154);
+    color: black;
+    text-align: center;
+    padding: 1.9em;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(250, 224, 191);
+    color: rgb(3, 3, 3);
+    padding: 0.6em;
+}
+
+.menuitem{
+    margin-right: 0.5em;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 245, 225);
+    color: black;
+    padding: 2em;
+}
+
+.itemmenu{
+    margin-bottom: 0.5em;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
